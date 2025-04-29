@@ -1,0 +1,15 @@
+[project]
+name = "personal-music"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "ffmpeg>=1.4",
+    "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.3",
+    "uvicorn>=0.34.2",
+    "yt-dlp>=2025.3.31",
+]
