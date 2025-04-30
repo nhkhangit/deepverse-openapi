@@ -219,7 +219,7 @@ async def download_content(
     # Kiểm tra URL cơ bản
     if not url.startswith(('https://www.youtube.com', 'https://youtu.be', 
                           'https://www.tiktok.com', 'https://vm.tiktok.com', 
-                          'https://music.youtube.com')):
+                          'https://music.youtube.com', 'https://vt.tiktok.com')):
         raise HTTPException(status_code=400, detail="URL phải từ YouTube hoặc TikTok!")
 
     is_tiktok = 'tiktok.com' in url
